@@ -1,0 +1,378 @@
+.navbar-menu {
+	height: 100vh !important;
+}
+
+html.clicked {
+    position: relative;
+}
+
+/*-- -------------------------- -->
+<---          Landing           -->
+<--- -------------------------- -*/
+
+#hero {
+    position: relative;
+    min-height: auto;
+    background: url("/images/laning-mobile.jpg");
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 73%;
+}
+
+#hero:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 200%;
+    width: 100%;
+    top: 0;
+    background: #000;
+    z-index: 990000;
+    animation: load 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#hero:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 200%;
+    width: 100%;
+    top: 0;
+    background: #D5BF86;
+    z-index: 90000;
+    animation: load 1s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: .08s;
+}
+
+@keyframes load {
+    from {
+        height: 200%;
+    }
+
+    to {
+        height: 0%;
+    }
+}
+
+.video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
+
+#hero .container {
+    position: relative;
+    min-height: 100%;
+    display: block;
+}
+
+#hero .content {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 100%;
+    z-index: 100;
+    margin-bottom: 60px;
+}
+
+.header-span {
+    color: #D5BF86;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.header-span:after {
+    content: '';
+    position: relative;
+    display: inline-block;
+    margin-left: 7px;
+    height: 2px;
+    width: 17px;
+    background: #D5BF86;
+    vertical-align: middle;
+}
+
+#hero h1 {
+    color: #fff;
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.donate {
+    margin-bottom: 20px;
+}
+
+/*-- -------------------------- -->
+<---        How We Work         -->
+<--- -------------------------- -*/
+
+#how-we-work {
+    padding-top: 60px;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+#how-we-work p {
+    margin-bottom: 7px;
+}
+
+#how-we-work img {
+    display: block;
+    margin: 20px auto;
+}
+
+#how-we-work .content .header-span {
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 24px;
+    display: block;
+    position: relative;
+    padding-left: 10px;
+}
+
+#how-we-work .content .header-span:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    height: 8px;
+    width: 30px;
+    top: 50%;
+    transform: translateY(-50%) skew(-10deg);
+    left: -30px;
+}
+
+#how-we-work .content .header-span:nth-of-type(1):before {
+    background: #FCB711;
+}
+
+#how-we-work .content .header-span:nth-of-type(2):before {
+    background: #C1282D;
+}
+
+#how-we-work .content .header-span:nth-of-type(3):before {
+    background: #0065A5;
+}
+
+#how-we-work .content .header-span:nth-of-type(4):before {
+    background: #D5BF86;
+}
+
+#how-we-work .content .header-span:nth-of-type(5):before {
+    background: #964B36;
+}
+
+#how-we-work .content .header-span:nth-of-type(6):before {
+    background: #7E8283;
+}
+
+#how-we-work h3 {
+    color: #fff;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+/*-- -------------------------- -->
+<---       The Challenge        -->
+<--- -------------------------- -*/
+
+#challenge {
+    padding: 60px 0 144px;
+    background: #1f1f1f;
+}
+
+#challenge p {
+    margin-bottom: 30px;
+}
+
+#challenge p:last-child {
+    margin: 0;
+}
+
+/*-- -------------------------- -->
+<---        Get Involved        -->
+<--- -------------------------- -*/
+
+#get-involved {
+    padding: 144px 0 230px;
+    position: relative;
+}
+
+#get-involved .image {
+    height: 188px;
+    width: 100%;
+    background: url("/images/red-blue.jpg");
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -238px;
+}
+
+#get-involved .left {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#get-involved .left p,
+#get-involved .left span {
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: 800;
+}
+
+#get-involved .left span {
+    color: #D5BF86;
+    font-style: italic;
+}
+
+#get-involved .right p {
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+#get-involved .right p:last-of-type {
+    margin-bottom: 30px;
+}
+
+#get-involved .right .block {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 10px;
+}
+
+#get-involved .right .block:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    height: 8px;
+    width: 30px;
+    top: 50%;
+    transform: translateY(-50%) skew(-10deg);
+    left: -30px;
+}
+
+#get-involved .right .block:nth-of-type(1):before {
+    background: #0065A5;
+}
+
+#get-involved .right .block:nth-of-type(2):before {
+    background: #C1282D;
+}
+
+#get-involved .right .block:nth-of-type(3):before {
+    background: #FCB711;
+}
+
+#get-involved a {
+    margin-left: 10px;
+}
+
+/*-- -------------------------- -->
+<---         Donations          -->
+<--- -------------------------- -*/
+
+#donations {
+    background: #1f1f1f;
+    padding-top: 217px;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.image-group {
+    position: absolute;
+    height: 334px;
+    width: 100%;
+    max-width: 314px;
+    top: -384px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.one {
+    height: calc(53% - 5px);
+    width: calc(50% - 5px);
+    display: inline-block;
+    background: #fff;
+    vertical-align: top;
+    background: url("/images/one.jpg");
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.two {
+    display: inline-block;
+    height: calc(47% - 5px);
+    width: calc(50% - 5px);
+    background: #fff;
+    vertical-align: top;
+    transform: translateX(10px);
+    background: url("/images/two.jpg");
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.three {
+    display: inline-block;
+    height: calc(47% - 5px);
+    width: calc(50% - 5px);
+    background: #fff;
+    vertical-align: bottom;
+    transform: translateY(-10px);
+    background: url("/images/three.jpg");
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.four {
+    display: inline-block;
+    height: calc(53% - 5px);
+    width: calc(50% - 5px);
+    background: #fff;
+    vertical-align: bottom;
+    transform: translateY(-10px) translateX(10px);
+    background: url("/images/four.jpg");
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#donations .text p {
+    margin-bottom: 30px;
+}
+
+/*Iphone 6/7/8 */
+@media screen and (min-width: 375px) {
+
+    /*-- -------------------------- -->
+    <---          Landing           -->
+    <--- -------------------------- -*/
+
+    #hero {
+        padding-top: 107%;
+    }
+
+    .involved {
+        float: right;
+    }
+
+}
