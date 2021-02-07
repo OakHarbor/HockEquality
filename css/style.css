@@ -29,8 +29,10 @@ html.clicked {
     top: 0;
     background: #000;
     z-index: 990000;
-    animation: load 1s ease-in-out;
-    animation-fill-mode: forwards;
+    -webkit-animation: load 1s ease-in-out;
+            animation: load 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
 }
 
 #hero:after {
@@ -42,9 +44,22 @@ html.clicked {
     top: 0;
     background: #D5BF86;
     z-index: 90000;
-    animation: load 1s ease-in-out;
-    animation-fill-mode: forwards;
-    animation-delay: .08s;
+    -webkit-animation: load 1s ease-in-out;
+            animation: load 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: .08s;
+            animation-delay: .08s;
+}
+
+@-webkit-keyframes load {
+    from {
+        height: 200%;
+    }
+
+    to {
+        height: 0%;
+    }
 }
 
 @keyframes load {
@@ -150,7 +165,9 @@ html.clicked {
     height: 8px;
     width: 30px;
     top: 50%;
-    transform: translateY(-50%) skew(-10deg);
+    -webkit-transform: translateY(-50%) skew(-10deg);
+        -ms-transform: translateY(-50%) skew(-10deg);
+            transform: translateY(-50%) skew(-10deg);
     left: -30px;
 }
 
@@ -264,7 +281,9 @@ html.clicked {
     height: 8px;
     width: 30px;
     top: 50%;
-    transform: translateY(-50%) skew(-10deg);
+    -webkit-transform: translateY(-50%) skew(-10deg);
+        -ms-transform: translateY(-50%) skew(-10deg);
+            transform: translateY(-50%) skew(-10deg);
     left: -30px;
 }
 
@@ -302,7 +321,9 @@ html.clicked {
     max-width: 314px;
     top: -384px;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 .one {
@@ -323,7 +344,9 @@ html.clicked {
     width: calc(50% - 5px);
     background: #fff;
     vertical-align: top;
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+            transform: translateX(10px);
     background: url("/images/two.jpg");
 	background-size: cover;
     background-position: center;
@@ -336,7 +359,9 @@ html.clicked {
     width: calc(50% - 5px);
     background: #fff;
     vertical-align: bottom;
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+            transform: translateY(-10px);
     background: url("/images/three.jpg");
 	background-size: cover;
     background-position: center;
@@ -349,7 +374,9 @@ html.clicked {
     width: calc(50% - 5px);
     background: #fff;
     vertical-align: bottom;
-    transform: translateY(-10px) translateX(10px);
+    -webkit-transform: translateY(-10px) translateX(10px);
+        -ms-transform: translateY(-10px) translateX(10px);
+            transform: translateY(-10px) translateX(10px);
     background: url("/images/four.jpg");
 	background-size: cover;
     background-position: center;
