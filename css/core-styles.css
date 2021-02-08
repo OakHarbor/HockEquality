@@ -371,7 +371,7 @@ p, a, li, span {
     top: 0;
 	position: absolute;
     right: 0;
-    height: 190px;
+    height: 100vh;
 	-webkit-transition: .3s ease;
 	-o-transition: .3s ease;
 	transition: .3s ease;
@@ -675,7 +675,8 @@ p, a, li, span {
     }
 
 	.navbar-menu {
-		width: 100%;
+        width: 100% !important;
+        height: 190px;
 		margin: auto;
 		position: absolute;
 		display: -webkit-box;
