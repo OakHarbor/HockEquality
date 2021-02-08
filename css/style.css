@@ -9,6 +9,10 @@ html.clicked {
 
 #hero {
     position: relative;
+    background: url("https://www.youtube.com/embed/M3IfC9PI3c4");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     min-height: auto;
     padding-top: 63%;
 }
