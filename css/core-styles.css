@@ -8,6 +8,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .desktop-nav {
     display: none !important;
 }
