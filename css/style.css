@@ -1,6 +1,3 @@
-.navbar-menu {
-	height: 100vh !important;
-}
 
 html.clicked {
     position: relative;
@@ -13,11 +10,14 @@ html.clicked {
 #hero {
     position: relative;
     min-height: auto;
-    background: url("/images/laning-mobile.jpg");
-	background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     padding-top: 63%;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 #hero:before {
@@ -33,23 +33,6 @@ html.clicked {
             animation: load 1s ease-in-out;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-}
-
-#hero:after {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 200%;
-    width: 100%;
-    top: 0;
-    background: #D5BF86;
-    z-index: 90000;
-    -webkit-animation: load 1s ease-in-out;
-            animation: load 1s ease-in-out;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-delay: .08s;
-            animation-delay: .08s;
 }
 
 @-webkit-keyframes load {
@@ -251,6 +234,7 @@ html.clicked {
     font-size: 21px;
     line-height: 28px;
     font-weight: 800;
+    font-style: italic;
 }
 
 #get-involved .left span {
@@ -401,5 +385,267 @@ html.clicked {
     .involved {
         float: right;
     }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+
+   /*-- -------------------------- -->
+   <---          Landing           -->
+   <--- -------------------------- -*/
+
+   #hero {
+       padding-top: 461px;
+   }
+
+   #hero .content {
+       width: 410px;
+   }
+
+   .header-span {
+       font-size: 18px;
+   }
+
+   #hero h1 {
+       font-size: 20px;
+       line-height: 27px;
+   }
+
+   /*-- -------------------------- -->
+   <---        How We Work         -->
+   <--- -------------------------- -*/
+
+   #how-we-work {
+       padding-top: 100px;
+   }
+
+   #how-we-work img {
+       position: absolute;
+       right: 0px;
+       width: 300px;
+   }
+
+   #how-we-work p {
+       margin-bottom: 50px;
+       width: 530px;
+   }
+
+   #how-we-work .content .header-span {
+       font-size: 20px;
+       line-height: 27px;
+       padding-left: 0;
+   }
+
+   #how-we-work h3 {
+       font-size: 16px;
+       line-height: 22px;
+       padding-left: 37px;
+   }
+
+   #how-we-work .content .header-span:before {
+       width: 26px;
+       left: 0px;
+       position: relative;
+       margin-right: 10px;
+   }
+
+   /*-- -------------------------- -->
+   <---         Challenge          -->
+   <--- -------------------------- -*/
+
+   #challenge {
+       padding: 100px 0;
+   }
+
+   /*-- -------------------------- -->
+   <---       Get Involved         -->
+   <--- -------------------------- -*/
+
+   #get-involved {
+       text-align: right;
+       padding-bottom: 100px;
+   }
+
+   #get-involved .mobile {
+       display: none;
+   }
+
+   #get-involved .desktop {
+       display: block !important;
+       margin-top: 20px;
+   }
+
+   #get-involved .left {
+       display: inline-block;
+       width: 270px;
+       vertical-align: top;
+       float: left;
+       text-align: left !important;
+   }
+
+   #get-involved .image {
+       position: relative;
+       top: auto;
+       -webkit-transform: none;
+           -ms-transform: none;
+               transform: none;
+       height: 380px;
+       margin-bottom: 50px;
+   }
+
+   #get-involved .right {
+       display: inline-block;
+       width: 370px;
+       vertical-align: top;
+       text-align: left !important;
+   }
+
+   #get-involved .right .block:before {
+       position: relative;
+       left: auto;
+       margin-right: 10px;
+   }
+
+   #get-involved .right p,
+   #get-involved .right .block {
+       padding-left: 0;
+   }
+
+   #get-involved .right p:last-of-type {
+       margin-bottom: 50px;
+   }
+
+   /*-- -------------------------- -->
+   <---         Donations          -->
+   <--- -------------------------- -*/
+
+   #donations {
+       padding-top: 100px;
+       padding-bottom: 100px;
+       height: 652px;
+   }
+
+   #donations .text {
+       display: inline-block;
+       width: 228px;
+   }
+
+   #donations .header-span {
+       margin-top: 38px;
+   }
+
+   .image-group {
+       top: auto;
+       -webkit-transform: none;
+           -ms-transform: none;
+               transform: none;
+       left: auto;
+       display: inline-block;
+       position: relative;
+       float: right;
+       width: 400px;
+       max-width: 400px;
+       height: 452px;
+   }
+
+   .three {
+       -webkit-transform: translateY(-17px);
+           -ms-transform: translateY(-17px);
+               transform: translateY(-17px);
+   }
+
+   .four {
+       -webkit-transform: translateY(-17px) translateX(10px);
+           -ms-transform: translateY(-17px) translateX(10px);
+               transform: translateY(-17px) translateX(10px);
+   }
+
+}
+
+
+/* 1024 Laptops */
+@media only screen and (min-width: 1024px) {
+
+   /*-- -------------------------- -->
+   <---          Landing           -->
+   <--- -------------------------- -*/
+
+   #hero .container {
+       width: 788px;
+   }
+
+   .donate {
+       margin-bottom: 0;
+   }
+
+   #hero .content {
+       margin-bottom: 100px;
+   }
+
+   /*-- -------------------------- -->
+   <---        How We Work         -->
+   <--- -------------------------- -*/
+
+   #how-we-work {
+       padding: 100px 0;
+   }
+
+   #how-we-work .container {
+       width: 788px;
+   }
+
+   /*-- -------------------------- -->
+   <---         Challenge          -->
+   <--- -------------------------- -*/
+
+   #challenge .container {
+       width: 670px;
+   }
+
+   /*-- -------------------------- -->
+   <---        Get Involved        -->
+   <--- -------------------------- -*/
+
+   #get-involved .container {
+       width: 790px;
+   }
+
+   #get-involved .left {
+       width: 308px;
+   }
+
+   #get-involved .right {
+       width: 390px;
+   }
+
+   #get-involved .image {
+       height: 430px;
+       margin-bottom: 70px;
+   }
+
+   #get-involved .right p:nth-of-type(1) {
+       margin-bottom: 50px;
+   }
+
+   #get-involved .right .block:before {
+       width: 26px;
+   }
+
+   #get-involved p.padd {
+       padding-left: 37px;
+   }
+
+   /*-- -------------------------- -->
+   <---          Donations         -->
+   <--- -------------------------- -*/
+
+   #donations .container {
+       width: 720px;
+   }
+
+   #donations .text p {
+       margin-bottom: 50px;
+   }
 
 }

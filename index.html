@@ -59,7 +59,8 @@
         <div class="mobile-wrapper">
             <div class="mobile-nav container mobile-nav-container">
                 <a class="logo" aria-label="hockequality logo link to go to home page" href="/">
-                    <img data-aos="fade-in" data-aos-delay="750" aria-hidden="true" src="/images/hockequality-logo-left-aligned.png" alt="hockequality logo">
+                    <img class="mobile" data-aos="fade-in" data-aos-delay="750" aria-hidden="true" src="/images/hockequality-logo-left-aligned.png" alt="hockequality logo">
+                    <img class="tablet" data-aos="fade-in" data-aos-delay="750" aria-hidden="true" src="/images/hockequality-logo-horizontal.png" alt="hockequality logo">
                 </a> 
                 <!-- Hamburger Menu -->
                 <button aria-label="open the menu" id="menu-button" class="hamburger hamburger--spring" onclick="toggleNav()" type="button">
@@ -78,14 +79,14 @@
             <div class="navbar-menu">
                 <div id="side-menu" class="side-nav">
                     <a class="logo" aria-label="hockequality logo link to go to home page" href="/">
-                        <img aria-hidden="true" src="/images/logo.png" alt="">
+                        <img aria-hidden="true" src="/images/hockequality-logo-horizontal.png" alt="">
                     </a>
                    
                     <ul id="on-top" class="navbar-links">
-                        <li class="nav-li"><a class="active-menu" href="index.html">Home</a></li>
-                        <li class="nav-li"><a href="/html/donate.html">Donate</a></li>
-                        <li class="nav-li"><a href="/html/contact.html">Contact</a></li>
+                        <li class="nav-li"><a class="active-menu nav-link" href="index.html">Home</a></li>
+                        <li class="nav-li"><a class="nav-link" href="/html/contact.html">Contact</a></li>
                     </ul>
+                    <a class="button-solid desktop-nav" href="/html/contact.html">Donate</a>
                 </div>
             </div>
         </nav>
@@ -98,9 +99,7 @@
         <!-- ============================================ -->
 
         <section id="hero">
-           <div class="video">
-            <!-- <iframe width="1180" height="664" src="https://www.youtube.com/embed/m1YUmZRfgqU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-           </div>
+        <iframe width="1180" height="664" src="https://www.youtube.com/embed/M3IfC9PI3c4" frameborder="0" allow="autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="container">
                 <div class="content">
                     <span class="header-span" 
@@ -190,22 +189,21 @@
                         “Alone we can do so little; together we can do so much.”
                     </p>
                     <span data-aos="fade-up" data-aos-delay="180">– Helen Keller</span>
-                </div>
-                <div class="right">
-                    <span data-aos="fade-up" data-aos-delay="200" class="header-span desktop">How to Get Involved</span>
+                </div><div class="right">
+                    <span data-aos="slide-right" data-aos-duration="800" data-aos-delay="200" class="header-span desktop">How to Get Involved</span>
                     <p data-aos="fade-up" data-aos-delay="250">
                         Equality in hockey doesn’t begin with one person. Behind our work, there are people who give, volunteer and act in their community to make hockey an inclusive sport for all.
                     </p>
-                    <h2 data-aos="fade-up" class="header-span block">Donate</h2>
-                    <p data-aos="fade-up">
+                    <h2 data-aos="slide-right" data-aos-duration="800" class="header-span block">Donate</h2>
+                    <p class="padd" data-aos="fade-up">
                         Your support will create sustainable and lasting impact on the hockey community.
                     </p>
-                    <h2 data-aos="fade-up" class="header-span block">Volunteer</h2>
-                    <p data-aos="fade-up">
+                    <h2 data-aos-delay="50" data-aos="slide-right" data-aos-duration="800" class="header-span block">Volunteer</h2>
+                    <p class="padd" data-aos="fade-up">
                         We welcome all the help we can get! If you’re interested in volunteering please contact us to get started!
                     </p>
-                    <h2 data-aos="fade-up" class="header-span block">Act</h2>
-                    <p data-aos="fade-up">
+                    <h2 data-aos-delay="100" data-aos="slide-right" data-aos-duration="800" class="header-span block">Act</h2>
+                    <p class="padd" data-aos="fade-up">
                         Are you doing something in your community to promote diversity and inclusion for all? Let us know so we can share your story and help support your activities.
                     </p>
                     <a href="/html/contact.html" class="button-solid">Contact Us</a>
@@ -250,9 +248,9 @@
                 <!-- Top -->
                 <div class="footer-top">
                     <a class="footer-logo" aria-label="hockequality logo" href="/">
-                        <img aria-hidden="true" src="/images/hockequality-logo-left-aligned.png" alt="logo">
-                    </a>
-                    <p class="mission">
+                        <img class="mobile" aria-hidden="true" src="/images/hockequality-logo-left-aligned.png" alt="logo">
+                        <img class="desktop" aria-hidden="true" src="/images/hockequality-logo-horizontal.png" alt="logo">
+                    </a><p class="mission">
                         Our mission is to make the game of hockey more diverse, inclusive, and accessible to all children across Canada.
                     </p>
                 </div>
@@ -262,17 +260,19 @@
                         <a class="footer-active" href="/">Home</a>
                         <a href="/html/contact.html">Contact</a>
                         <a href="/">Donate</a>
+                        <a class="email" href="mailto:info@hockequality.org"><span class="header-span">Email</span> info@hockequality.org</a>
                     </div>
                     <div class="email-group">
                         <span class="header-span">Email</span>
                         <a class="email" href="mailto:info@hockequality.org">info@hockequality.org</a>
                     </div>
-                    <a class="address" href="">
+                    <a class="address address-mobile" href="">
                         <span>5694 Hwy#7 East</span>
                         <span>Suite 103</span> 
                         <span>Markham, ON L3P 0E3</span>
                     </a>
                     <div class="social">
+                        <a class="address-desktop" href="">5694 Hwy#7 East Suite 103 Markham, ON L3P 0E3</a>
                         <a href=""><img src="/images/instagram.svg" alt=""></a>
                         <a href=""><img src="/images/twitter.svg" alt=""></a>
                     </div>
@@ -302,8 +302,8 @@
         AOS.init({
             duration: 800, // values from 0 to 3000, with step 50ms
             easing: 'ease',
-            mirror: false,
-            offset: 25,
+            mirror: true,
+            offset: 0,
         });
     </script>
 
