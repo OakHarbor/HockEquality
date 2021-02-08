@@ -43,12 +43,13 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/css/core-styles.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/contact.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- jQuery -->
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <title>HockEquality | Play for All</title>
+    <title>Contact | HockEquality | Play for All</title>
 </head>
 <body>
 
@@ -100,18 +101,24 @@
 
         <section id="contact-section">
             <div class="container">
-                <form id="contact-form" name="Contact Form" method="post" data-netlify="true">
-                    <span class="estimate-header">Get an Estimate</span>
-                
-                    <input aria-label="name" name="name" placeholder="Name" type="text" tabindex="1" required>
-                    <input aria-label="subject" name="email" placeholder="Subject" type="text" tabindex="2" required>
-                    <textarea aria-label="write your message" name="message" placeholder="What do you need done?" tabindex="6" required></textarea>
-                    <div data-netlify-recaptcha="true"></div>
-                    <p class="form-submit">
-                        <button name="submit" type="submit" id="contact-submit" class="primary button-solid" data-submit="...Sending">Send Message <img src="/images/paper-plane.svg" alt=""></button>
+                <div class="form-group">
+                    <p class="quote">
+                        “Alone we can do so little; together we can do so much.”
                     </p>
-                </form>
+                    <span class="name">– Helen Keller</span>
+                    <form id="contact-form" name="Contact Form" method="post" data-netlify="true">
+                        <input aria-label="name" name="name" placeholder="Name" type="text" tabindex="1" required>
+                        <input aria-label="subject" name="email" placeholder="Subject" type="text" tabindex="2" required>
+                        <textarea aria-label="Message" name="message" placeholder="Message" tabindex="6" required></textarea>
+                        <div data-netlify-recaptcha="true"></div>
+                        <p class="form-submit">
+                            <button name="submit" type="submit" id="contact-submit" class="button-solid" data-submit="...Sending">SUBMIT</button>
+                        </p>
+                    </form>
+                </div>
+                
             </div>
+            <div aria-hidden="true" class="right-image"></div>
         </section>
 
         <!-- ============================================ -->
@@ -122,13 +129,8 @@
             <div class="container">
                 <div data-aos="fade-up" class="left">
                     <div aria-hidden="true" class="image"></div>
-                    <h2 class="header-span mobile">How to Get Involved</h2>
-                    <p>
-                        “Alone we can do so little; together we can do so much.”
-                    </p>
-                    <span data-aos="fade-up" data-aos-delay="180">– Helen Keller</span>
                 </div><div class="right">
-                    <span data-aos="slide-right" data-aos-duration="800" data-aos-delay="200" class="header-span desktop">How to Get Involved</span>
+                    <span data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" class="header-span">How to Get Involved</span>
                     <p data-aos="fade-up" data-aos-delay="250">
                         Equality in hockey doesn’t begin with one person. Behind our work, there are people who give, volunteer and act in their community to make hockey an inclusive sport for all.
                     </p>
@@ -144,7 +146,6 @@
                     <p class="padd" data-aos="fade-up">
                         Are you doing something in your community to promote diversity and inclusion for all? Let us know so we can share your story and help support your activities.
                     </p>
-                    <a href="/html/contact.html" class="button-solid">Contact Us</a>
                 </div>
             </div>
         </section>
