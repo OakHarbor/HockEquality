@@ -1255,6 +1255,7 @@ footer > .container {
 
     .footer-logo {
         width: auto;
+        margin-bottom: 15px;
     }
 
     footer .desktop {
@@ -1300,7 +1301,8 @@ footer > .container {
         transition: .3s ease;
     }
 
-    .social a:hover {
+    .social a:nth-of-type(2):hover,
+    .social a:nth-of-type(3):hover {
         -webkit-transform: translateY(-6px);
             -ms-transform: translateY(-6px);
                 transform: translateY(-6px);
@@ -1319,9 +1321,10 @@ footer > .container {
     }
 
     .copyright {
-        -webkit-transform: translateX(-20px);
-            -ms-transform: translateX(-20px);
-                transform: translateX(-20px);
+        text-align: center;
+        -webkit-transform: translateX(-15px);
+            -ms-transform: translateX(-15px);
+                transform: translateX(-15px);
     }
 
     .top {
