@@ -310,7 +310,7 @@ body.opened:before {
     }
 
     #get-involved .image {
-        background: url("/images/red-blue.jpg");
+        background: url("/images/red-blue-desktop.jpg");
         background-size: cover;
         background-position: center;
         height: 570px;
