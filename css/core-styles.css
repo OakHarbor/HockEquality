@@ -1285,6 +1285,9 @@ footer > .container {
 
     .page-group .email {
         font-weight: normal;
+        -webkit-transform: translateX(11px);
+            -ms-transform: translateX(11px);
+                transform: translateX(11px);
     }
 
     /* .social a:first-child:hover {
@@ -1292,11 +1295,17 @@ footer > .container {
         text-decoration: underline;
     } */
     .social a {
+        -webkit-transition: .3s ease;
+        -o-transition: .3s ease;
         transition: .3s ease;
     }
 
     .social a:hover {
-        transform: translateY(-6px);
+        -webkit-transform: translateY(-6px);
+            -ms-transform: translateY(-6px);
+                transform: translateY(-6px);
+        -webkit-transition: .3s ease;
+        -o-transition: .3s ease;
         transition: .3s ease;
     }
 
@@ -1310,9 +1319,16 @@ footer > .container {
     }
 
     .copyright {
-        transform: translateX(-20px);
+        -webkit-transform: translateX(-20px);
+            -ms-transform: translateX(-20px);
+                transform: translateX(-20px);
     }
 
+    .top {
+        -webkit-transform: translateX(11px);
+            -ms-transform: translateX(11px);
+                transform: translateX(11px);
+    }
 
 
 }
