@@ -1280,15 +1280,24 @@ footer > .container {
 
     .page-group .email .header-span {
         font-size: 15px;
+        margin-bottom: 0;
     }
 
     .page-group .email {
         font-weight: normal;
     }
 
-    .social a:first-child:hover {
+    /* .social a:first-child:hover {
         color: #D5BF86;
         text-decoration: underline;
+    } */
+    .social a {
+        transition: .3s ease;
+    }
+
+    .social a:hover {
+        transform: translateY(-6px);
+        transition: .3s ease;
     }
 
     .social a:first-child {
