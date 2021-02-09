@@ -589,6 +589,7 @@ video{
        line-height: 40px;
        width: 600px;
        font-weight: 600;
+       margin-bottom: 30px;
    }
 
    .donate {
@@ -638,6 +639,9 @@ video{
    #get-involved .image {
        height: 430px;
        margin-bottom: 70px;
+       background: url("/images/red-blue-desktop.jpg");
+       background-size: cover;
+       background-position: 74% center;
    }
 
    #get-involved .right p:nth-of-type(1) {

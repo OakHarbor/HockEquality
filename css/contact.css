@@ -58,6 +58,7 @@ textarea {
     font-family: 'Open Sans', sans-serif;
     color: #fff;
     border-radius: 0;
+    font-size: 17px;
 }
 
 textarea {
@@ -65,6 +66,7 @@ textarea {
     height: 100px;
     font-family: 'Open Sans', sans-serif;
     padding-top: 70px;
+    font-size: 17px;
 }
 
 ::-webkit-input-placeholder {
@@ -97,7 +99,7 @@ textarea {
 }
 
 .volunteer {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 50px;
     position: relative;
     font-size: 16px;
@@ -116,6 +118,10 @@ textarea {
     font-family: 'Open Sans', sans-serif;
 }
 
+#volunteer-button {
+    margin-bottom: 20px;
+}
+
 #volunteer-form, #share-form {
     position: fixed;
     top: 50%;
@@ -130,6 +136,10 @@ textarea {
     -webkit-transition: .4s ease;
     -o-transition: .4s ease;
     transition: .4s ease;
+}
+
+.prev-button {
+    margin-bottom: 0px !important;
 }
 
 body:before {
