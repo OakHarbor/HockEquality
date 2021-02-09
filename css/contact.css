@@ -294,7 +294,7 @@ body.opened:before {
     }
 
     .right-image {
-        background: url("/images/two.jpg");
+        background: url("/images/two-desktop.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -310,6 +310,9 @@ body.opened:before {
     }
 
     #get-involved .image {
+        background: url("/images/red-blue.jpg");
+        background-size: cover;
+        background-position: center;
         height: 570px;
         -webkit-transform: translateX(-120px);
             -ms-transform: translateX(-120px);
