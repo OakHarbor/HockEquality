@@ -585,9 +585,10 @@ video{
    }
 
    #hero h1 {
-       font-size: 36px;
-       line-height: 46px;
+       font-size: 30px;
+       line-height: 40px;
        width: 600px;
+       font-weight: 600;
    }
 
    .donate {

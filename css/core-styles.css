@@ -776,13 +776,15 @@ p, a, li, span {
 
     .active-menu:before {
         content: '';
-        position: relative;
+        position: absolute;
         display: inline-block;
         height: 2px;
-        width: 20px;
+        width: 100%;
         background: #D5BF86;
         vertical-align: middle;
         left: auto;
+        top: auto;
+        bottom: -2px;
         margin-right: 5px;
     }
 }
