@@ -40,7 +40,7 @@
 #donations ul li {
     font-size: 17px;
     line-height: 23px;
-    margin-bottom: 23px;
+    margin-bottom: 15px;
     list-style: none;
     position: relative;
 }
@@ -85,6 +85,10 @@
     line-height: 30px;
     text-align: right;
     color: #D5BF86;
+}
+
+.donations-p {
+    margin-bottom: 20px !important;
 }
 
 @media screen and (min-width:768px) {
@@ -204,5 +208,12 @@
     #donations .text a {
         margin-bottom: 0;
     }
+
+    .embedded-donations {
+        -webkit-transform: translateY(-84%);
+            -ms-transform: translateY(-84%);
+                transform: translateY(-84%);
+    }
+
 
 }
