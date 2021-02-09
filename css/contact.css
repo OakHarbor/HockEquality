@@ -313,7 +313,7 @@ body.opened:before {
         background: url("/images/red-blue-desktop.jpg");
         background-size: cover;
         background-position: center;
-        height: 570px;
+        height: 777px;
         -webkit-transform: translateX(-120px);
             -ms-transform: translateX(-120px);
                 transform: translateX(-120px);
