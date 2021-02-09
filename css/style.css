@@ -576,8 +576,18 @@ video{
    <---          Landing           -->
    <--- -------------------------- -*/
 
+   #hero {
+       padding-top: 395px;
+   }
+
    #hero .container {
        width: 788px;
+   }
+
+   #hero h1 {
+       font-size: 40px;
+       line-height: 50px;
+       width: 600px;
    }
 
    .donate {
