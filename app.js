@@ -67,14 +67,20 @@ const shareForm = document.getElementById("share-form");
 const closeShare = document.getElementById("close-share");
 
 
+// VOLUNTEER BUTTON
+
 volunteerButton.addEventListener("click", function () { 
   volunteerForm.classList.add("opened");
   body.classList.add("opened");
+  // change aria hidden to allow screen readers to see it
+  volunteerForm.setAttribute("aria-hidden", "false")
 });
 
 closeVolunteer.addEventListener("click", function () {
   volunteerForm.classList.remove("opened");
   body.classList.remove("opened");
+  // change aria hidden to prevent screen readers from seeing it
+  volunteerForm.setAttribute("aria-hidden", "true")
 });
 
 // SHARE BUTTON
@@ -82,11 +88,15 @@ closeVolunteer.addEventListener("click", function () {
 shareButton.addEventListener("click", function () {
   shareForm.classList.add("opened");
   body.classList.add("opened");
+  // change aria hidden to allow screen readers to see it
+  shareForm.setAttribute("aria-hidden", "false")
 });
 
 closeShare.addEventListener("click", function () {
   shareForm.classList.remove("opened");
   body.classList.remove("opened");
+  // change aria hidden to prevent screen readers from seeing it
+  shareForm.setAttribute("aria-hidden", "true")
 });
 
 // ------------------------------------------------- DARK MODE -----------------------------
