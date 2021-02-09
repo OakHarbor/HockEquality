@@ -99,11 +99,6 @@ closeShare.addEventListener("click", function () {
   shareForm.setAttribute("aria-hidden", "true")
 });
 
-const videoTag = document.querySelector('video');
-if (document.documentElement.clientWidth >= 1024) {
-
-  videoTag.setAttribute("poster", "");
-}
 
 // ------------------------------------------------- DARK MODE -----------------------------
 

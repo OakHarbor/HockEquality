@@ -744,6 +744,10 @@ p, a, li, span {
         font-weight: bold;
         text-transform: uppercase;
     }
+
+    .side-nav #on-top a:hover {
+        color: #D5BF86;
+    }
     
     .side-nav ul li{
         opacity: 1;
