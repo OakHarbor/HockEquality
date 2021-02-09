@@ -56,6 +56,38 @@ let toggleNav = function () {
     }
 }
 
+// -----------------  Form Functions
+
+const volunteerButton = document.getElementById("volunteer-button");
+const volunteerForm = document.getElementById("volunteer-form");
+const closeVolunteer = document.getElementById("close-volunteer");
+
+const shareButton = document.getElementById("share-button");
+const shareForm = document.getElementById("share-form");
+const closeShare = document.getElementById("close-share");
+
+
+volunteerButton.addEventListener("click", function () { 
+  volunteerForm.classList.add("opened");
+  body.classList.add("opened");
+});
+
+closeVolunteer.addEventListener("click", function () {
+  volunteerForm.classList.remove("opened");
+  body.classList.remove("opened");
+});
+
+// SHARE BUTTON
+
+shareButton.addEventListener("click", function () {
+  shareForm.classList.add("opened");
+  body.classList.add("opened");
+});
+
+closeShare.addEventListener("click", function () {
+  shareForm.classList.remove("opened");
+  body.classList.remove("opened");
+});
 
 // ------------------------------------------------- DARK MODE -----------------------------
 

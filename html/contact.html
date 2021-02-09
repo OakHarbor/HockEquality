@@ -93,11 +93,11 @@
                         “Alone we can do so little; together we can do so much.”
                     </p>
                     <span class="name">– Helen Keller</span>
-                    <form id="contact-form" name="Contact Form" method="post" data-netlify="true">
+                    <form id="contact-form" name="Contact Form" method="post">
                         <input aria-label="name" name="name" placeholder="Name" type="text" tabindex="1" required>
                         <input aria-label="subject" name="email" placeholder="Subject" type="text" tabindex="2" required>
-                        <textarea aria-label="Message" name="message" placeholder="Message" tabindex="6" required></textarea>
-                        <div data-netlify-recaptcha="true"></div>
+                        <textarea aria-label="Message" name="message" placeholder="Message" tabindex="3" required></textarea>
+                    
                         <p class="form-submit">
                             <button name="submit" type="submit" id="contact-submit" class="button-solid" data-submit="...Sending">SUBMIT</button>
                         </p>
@@ -106,6 +106,38 @@
                 
             </div>
             <div aria-hidden="true" class="right-image"></div>
+
+
+            <!-- Volunteer Form -->
+            <div id="volunteer-form">
+                <h2>Volunteer With Us!</h2>
+                <form id="contact-form" name="Contact Form" method="post">
+                    <input aria-label="name" name="name" placeholder="Name" type="text" tabindex="1" required>
+                    <input aria-label="email" name="email" placeholder="Email" type="email" tabindex="2" required>
+                    <textarea aria-label="Message" name="message" placeholder="Message" tabindex="3" required></textarea>
+               
+                    <p id="volunteer-submit" class="form-submit">
+                        <button name="submit" type="submit" id="contact-submit" class="button-solid" data-submit="...Sending">SUBMIT</button>
+                    </p>
+                </form>
+                <button id="close-volunteer" class="close"><img src="/images/close.svg" alt=""> Close</button>
+            </div>
+
+            <!-- Share Your Story Form -->
+            <div id="share-form">
+                <h2>SHARE YOUR STORY!</h2>
+                <form id="contact-form" name="Contact Form" method="post">
+                    <input aria-label="name" name="name" placeholder="Name" type="text" tabindex="1" required>
+                    <input aria-label="organization" name="organization" placeholder="Organization" type="text" tabindex="2" required>
+                    <input aria-label="location" name="location" placeholder="Location" type="text" tabindex="3" required>
+                    <textarea aria-label="Message" name="message" placeholder="Your Story" tabindex="4" required></textarea>
+            
+                    <p id="volunteer-submit" class="form-submit">
+                        <button name="submit" type="submit" id="contact-submit" class="button-solid" data-submit="...Sending">SUBMIT</button>
+                    </p>
+                </form>
+                <button id="close-share" class="close close-share"><img src="/images/close.svg" alt=""> Close</button>
+            </div>
         </section>
 
         <!-- ============================================ -->
@@ -129,10 +161,12 @@
                     <p class="padd" data-aos="fade-up">
                         We welcome all the help we can get! If you’re interested in volunteering please contact us to get started!
                     </p>
+                    <button id="volunteer-button" class="button-solid volunteer">Volunteer Now</button>
                     <h2 data-aos-delay="100" data-aos="slide-right" data-aos-duration="800" class="header-span block">Act</h2>
                     <p class="padd" data-aos="fade-up">
                         Are you doing something in your community to promote diversity and inclusion for all? Let us know so we can share your story and help support your activities.
                     </p>
+                    <button id="share-button" class="button-solid volunteer">Share Your Story</button>
                 </div>
             </div>
         </section>
@@ -228,7 +262,7 @@
         AOS.init({
             duration: 800, // values from 0 to 3000, with step 50ms
             easing: 'ease',
-            mirror: true,
+            mirror: false,
             offset: 0,
         });
     </script>
