@@ -312,8 +312,8 @@ body.opened:before {
     #get-involved .image {
         background: url("/images/red-blue-desktop.jpg");
         background-size: cover;
-        background-position: center;
-        height: 777px;
+        background-position: 70% center;
+        height: 810px;
         -webkit-transform: translateX(-120px);
             -ms-transform: translateX(-120px);
                 transform: translateX(-120px);
