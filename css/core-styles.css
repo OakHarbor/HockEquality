@@ -1305,7 +1305,14 @@ footer > .container {
     }
 
     .design-credit .container {
-        width: 798px;
+        width: 681px;
+        padding: 0 ;
     }
+
+    .copyright {
+        transform: translateX(-20px);
+    }
+
+
 
 }
